@@ -9,20 +9,20 @@ import Footer from "./Components/Footer";
 import "./App.css";
 
 function App() {
-	return (
-		<main className="main">
-			<Navbar />
-			<div className="app_section_container">
-				<Home />
-				<About />
-				<Experience />
-				<Work />
-				<Contact />
-			</div>
-			<ContactBar />
-			<Footer />
-		</main>
-	);
+  return (
+    <main className="main">
+      <Navbar />
+      <div className="app_section_container">
+        <Home />
+        <About />
+        <Experience />
+        <Work />
+        <Contact />
+      </div>
+      <ContactBar />
+      <Footer />
+    </main>
+  );
 }
 
 export default App;

@@ -48,3 +48,17 @@
 .btn:hover {
     background: var(--green-tint);
 }
+@media (max-width: 768px){
+    .home_section{
+        width: 90%;
+    }
+    .heading_1{
+        font-size: 40px;
+    }
+    .heading_2{
+        font-size: 30px;
+    }
+    .desc{
+        width: 90%;
+    }
+}

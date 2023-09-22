@@ -5,3 +5,12 @@
     left: 150px;
     z-index: 2
 }
+
+@media (max-width:768px) {
+    .app_section_container {
+        position: relative;
+        width: 90%;
+        left: 1rem
+        
+    }
+}

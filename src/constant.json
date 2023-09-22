@@ -1,58 +1,46 @@
 {
-    "experiences": [
-        {
-            "company": "Microsoft",
-            "link": "/",
-            "title": "Sr. Frontend Developer",
-            "duration": "Aug 2021 - Present",
-            "desc": [
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-                "when an unknown printer took a galley of type and scrambled.",
-                "It is a long established fact that a reader will be distracted."
-            ]
-        },
-        {
-            "company": "Apple",
-            "link": "/",
-            "title": "Jr. Frontend Developer",
-            "duration": "Jan 2021 - Aug 2021",
-            "desc": [
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-                "when an unknown printer took a galley of type and scrambled.",
-                "Various versions have evolved over the years, sometimes by accident"
-            ]
-        },
-        {
-            "company": "Google",
-            "link": "/",
-            "title": "Internship",
-            "duration": "Sep 2020 - Jan 2021",
-            "desc": [
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-                "when an unknown printer took a galley of type and scrambled.",
-                "It is a long established fact that a reader will be distracted."
-            ]
-        }
-    ],
-    "projects": [
-        {
-            "title":"Ecommerce",
-            "image": "./images/project_1.png",
-            "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            "skills": ["React", "Express", "MongoDB"],
-            "github": "/",
-            "link": ""
-        },
-        {
-            "title":"Spotify",
-            "image": "./images/project_2.png",
-            "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            "skills": ["React", "Express", "MongoDB"],
-            "github": "/",
-            "link": "/"
-        }
-    ]
+  "experiences": [
+    {
+      "company": "White Blink",
+      "link": "/",
+      "title": "Software Developer",
+      "duration": "March 2022 - Feb 2023",
+      "desc": [
+        "Developed and maintained responsive and user-friendly front-end interfaces using ReactJS, Bootstrap managed state using Redux and Context API",
+        "Designed and built client-side routing using react-router-dom",
+        "Developed back-end staff in Node.js and Express.js, facilitating data storage and retrieval using MongoDB and Mongoose.",
+        "Used in development: Node, Express, Mongoose, JWT, REST APIs, CORS, Helmet, Joi, Multer, Javascript, React, Bootstrap, CSS, JSX,  Git and Github "
+      ]
+    },
+    {
+      "company": "Bitpastel",
+      "link": "/",
+      "title": "Software Developer Intern",
+      "duration": "Sep 2021 - Seo 2022",
+      "desc": [
+        "Collaborated on the front end using ReactJS, HTML5, CSS3, and Bootstrap to create responsive and user-friendly web interfaces",
+        "Integrated RESTful APIs.",
+        "Assisted in testing, to ensure application reliability.",
+        "Engaged in code reviews to learn and maintain code quality standards."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Ecommerce",
+      "image": "./images/project_1.png",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "skills": ["React", "Express", "MongoDB"],
+      "github": "/",
+      "link": ""
+    },
+    {
+      "title": "Spotify",
+      "image": "./images/project_2.png",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "skills": ["React", "Express", "MongoDB"],
+      "github": "/",
+      "link": "/"
+    }
+  ]
 }
