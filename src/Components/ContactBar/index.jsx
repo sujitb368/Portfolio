@@ -11,6 +11,7 @@ function ContactBar() {
         <a
           href="https://www.linkedin.com/in/sujit-barman-1a6a01204/"
           target="_blank"
+          rel="noreferrer"
           className={styles.icon}
         >
           <LinkedInIcon />
@@ -18,6 +19,7 @@ function ContactBar() {
         <a
           href="https://github.com/sujitb368"
           target="_blank"
+          rel="noreferrer"
           className={styles.icon}
         >
           <GitHubIcon />
