@@ -1,82 +1,68 @@
 import Heading from "./../../Components/Heading";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import constant from "../../constant.json";
 import styles from "./styles.module.css";
+import { useEffect, useState } from "react";
 
 function Work() {
-	return (
-		<section id="work">
-			<Heading index="03" heading="Some Things I’ve Built" />
-			<div className={styles.container}>
-				{constant.projects.map((project, index) =>
-					index % 2 === 0 ? (
-						<div className={styles.project}>
-							<div className={styles.left}>
-								<a href={project.link} target="__blank">
-									<img
-										src={project.image}
-										className={styles.img}
-										alt="project_img"
-									/>
-								</a>
-							</div>
-							<div className={styles.right}>
-								<a href={project.link} className={styles.heading}>
-									{project.title}
-								</a>
-								<p className={styles.desc}>{project.desc}</p>
-								<div className={styles.skill_container}>
-									{project.skills.map((skill) => (
-										<p>{skill}</p>
-									))}
-								</div>
-								<div>
-									<a href="/" className={styles.link}>
-										<GitHubIcon />
-									</a>
-									<a href="/" className={styles.link}>
-										<OpenInNewIcon />
-									</a>
-								</div>
-							</div>
-						</div>
-					) : (
-						<div className={styles.project}>
-							<div className={styles.left}>
-								<a href={project.link} className={styles.heading}>
-									{project.title}
-								</a>
-								<p className={styles.desc}>{project.desc}</p>
-								<div className={styles.skill_container}>
-									{project.skills.map((skill) => (
-										<p>{skill}</p>
-									))}
-								</div>
-								<div>
-									<a href="/" className={styles.link}>
-										<GitHubIcon />
-									</a>
-									<a href="/" className={styles.link}>
-										<OpenInNewIcon />
-									</a>
-								</div>
-							</div>
-							<div className={styles.right}>
-								<a href={project.link} target="__blank">
-									<img
-										src={project.image}
-										className={styles.img}
-										alt="project_img"
-									/>
-								</a>
-							</div>
-						</div>
-					)
-				)}
-			</div>
-		</section>
-	);
+  const [myRepo, setMyRepo] = useState([]);
+
+  const getMyRepo = async () => {
+    try {
+      const response = await fetch(
+        `https://api.github.com/users/sujitb368/repos`
+      );
+
+      const data = await response?.json();
+
+      if (data) {
+        setMyRepo(data);
+      }
+
+      console.log(data);
+    } catch (error) {
+      console.log(`Error:`, error);
+    }
+  };
+
+  useEffect(() => {
+    getMyRepo();
+  }, []);
+  return (
+    <section id="work">
+      <Heading index="03" heading="Some Things I’ve Built" />
+      <div className={`row justify-content-center`}>
+        {myRepo.map((repo, index) => (
+          <div
+            className={`${
+              styles.project
+            } col-md-3 border rounded d-flex flex-column justify-content-center align-items-center m-0 ${
+              (index + 1) % 3 !== 0 ? "me-3" : ""
+            } mb-2 p-3`}
+          >
+            <div className={`col-12 ${styles.right}`}>
+              <a href={repo.clone_url} className={`fw-bold m-auto `}>
+                {repo.name}
+              </a>
+
+              <p className={`mt-2 ${styles.desc}`}>
+                {repo.description ?? "No description"}
+              </p>
+
+              <div>
+                <a href={repo.clone_url} className={styles.link}>
+                  <GitHubIcon />
+                </a>
+                <a href="/" className={styles.link}>
+                  <OpenInNewIcon />
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default Work;

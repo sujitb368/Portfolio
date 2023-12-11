@@ -30,18 +30,6 @@ function About() {
             fundamental part of my professional journey, and I relish the
             opportunity to expand my knowledge and skill set
           </p>
-          {/* <p className={styles.desc}>
-            I am enthusiastic about creating exceptional web experiences, and
-            I'm always eager to take on new projects that allow me to push the
-            boundaries of what's possible. If you're looking for a dedicated and
-            skilled full-stack developer to bring your ideas to life, let's
-            connect and make it happen!
-            <hr />
-            Thank you for visiting my portfolio website. Feel free to explore my
-            work, and if you'd like to get in touch, please don't hesitate to
-            reach out through the contact form. Let's work together to bring
-            your ideas to life in the digital world!
-          </p> */}
         </div>
         {/* <div className={styles.right}>
           <img

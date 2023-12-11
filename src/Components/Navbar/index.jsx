@@ -25,7 +25,12 @@ function Navbar() {
         <a href="#contact" className={`${styles.nav_link}`}>
           <span>04.</span>Contact
         </a>
-        <button className={`${styles.nav_resume_btn}`}>Resume</button>
+        <a
+          href="https://drive.google.com/file/d/1zYJ0eqwPsCOaE4eXSL7BmAIMujIHFy_K/view?usp=sharing"
+          target="_"
+        >
+          <button className={`${styles.nav_resume_btn}`}>Resume</button>
+        </a>
       </div>
     </nav>
   );
