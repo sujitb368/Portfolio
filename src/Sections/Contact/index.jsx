@@ -12,12 +12,14 @@ function Contact() {
         Feel free to get in touch with me. I am always open to discussing new
         projects, creative ideas or opportunities to be part of your visions.
       </p>
-      <a href="tel:8250308197">
-        <button className={styles.btn}>Call Me</button>
-      </a>
-      <a href="mailto:sujitbedu@gmail.com">
-        <button className={styles.btn}>Say Hi</button>
-      </a>
+      <div className="d-flex">
+        <a className="me-1" href="tel:8250308197">
+          <button className={styles.btn}>Call Me</button>
+        </a>
+        <a href="mailto:sujitbedu@gmail.com">
+          <button className={styles.btn}>Say Hi</button>
+        </a>
+      </div>
     </section>
   );
 }

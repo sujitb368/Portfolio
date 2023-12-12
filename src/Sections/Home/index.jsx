@@ -2,7 +2,10 @@ import styles from "./styles.module.css";
 
 function Home() {
   return (
-    <section className={styles.home_section} id="home">
+    <section
+      className={`mt-5 pt-5 mt-md-0 pt-md-0${styles.home_section}`}
+      id="home"
+    >
       <p className={styles.greet}>Hi, my name is</p>
       <h1 className={styles.heading_1}>Sujit Barman.</h1>
       <h1 className={styles.heading_2}>I build things for the web.</h1>

@@ -36,9 +36,9 @@ function Work() {
             key={repo.id}
             className={`${
               styles.project
-            } col-md-3 border rounded d-flex flex-column justify-content-center align-items-center m-0 ${
-              (index + 1) % 3 !== 0 ? "me-md-3" : ""
-            } mb-2 p-3`}
+            } col-md-4 col-lg-3 border rounded d-flex flex-column justify-content-center align-items-center m-0 ${
+              (index + 1) % 3 !== 0 ? "me-lg-3" : ""
+            } mb-2 p-3 `}
           >
             <div className={`col-12 ${styles.right}`}>
               <a href={repo.clone_url} className={`fw-bold m-auto `}>

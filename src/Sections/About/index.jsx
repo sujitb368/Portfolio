@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 
 function About() {
   return (
-    <section id="about">
+    <section className="pt-3" id="about">
       <Heading index="01" heading="About Me" />
       <div className={styles.container}>
         <div className={styles.left}>

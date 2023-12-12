@@ -23,7 +23,7 @@ function Navbar() {
 
       <div
         id="navbarContent"
-        className={`collapse ms-auto justify-content-md-end  ${styles.mobile} ${styles.block}`}
+        className={`navbarContent collapse ms-auto pe-md-3 justify-content-md-end  ${styles.mobile} ${styles.block}`}
       >
         <a href="#about" className={`${styles.nav_link}`}>
           <span>01.</span>About

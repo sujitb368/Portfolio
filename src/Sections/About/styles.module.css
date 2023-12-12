@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 200px);
+    /* height: calc(100vh - 200px); */
 }
 
 .left {
@@ -42,4 +42,11 @@
 .profile_img:hover ~ .img_border {
     margin-top: 15px;
     margin-left: 15px;
+}
+
+
+@media (min-width: 764px){
+    .container{
+        height: calc(100vh - 200px);
+    }
 }
