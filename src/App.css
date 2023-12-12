@@ -6,6 +6,10 @@
     z-index: 2
 }
 
+.pointer{
+    cursor: pointer;
+}
+
 @media (max-width:768px) {
     .app_section_container {
         position: relative;

@@ -54,7 +54,7 @@ function Work() {
                   href={repo.clone_url}
                   target="_blank"
                   rel="noreferrer"
-                  className={styles.link}
+                  className={`${styles.link} pointer`}
                 >
                   <GitHubIcon />
                 </a>
