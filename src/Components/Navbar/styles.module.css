@@ -59,11 +59,16 @@
     background: var(--green-tint);
 }
 
-@media (max-width: 768px){
+
+@media (max-width: 763px){
     .hamburger {
         background-color: var(--green);
         display: block !important;
     }
+    .navbar-collapse{
+        flex-basis: 100% !important;
+    }
+    
     .mobile_nav{
         display: flex;
         flex-wrap: wrap;
@@ -75,5 +80,14 @@
     }
     .mobile_nav > button{
         margin-top: 10px;
+    }
+}
+
+@media (min-width: 764px) {
+    .block{
+       display: block !important; 
+    }
+    .navbar-collapse{
+        flex-basis: unset !important;
     }
 }

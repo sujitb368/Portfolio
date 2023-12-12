@@ -44,3 +44,10 @@
 .btn:hover {
     background: var(--green-tint);
 }
+
+@media (max-width: 763px){
+    .desc {
+        width: 100%;
+        
+    }
+}

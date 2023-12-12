@@ -8,11 +8,23 @@ function Navbar() {
       <div className={`${styles.nav_left}`}>
         <a href="#home">Sujit</a>
       </div>
-      <button className={`d-md-none btn me-3 ${styles.hamburger}`}>
+
+      <button
+        type="button"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent"
+        className={`navbar-toggler d-md-none btn me-3 ${styles.hamburger}`}
+      >
         <MenuIcon />
       </button>
 
-      <div className={`${styles.nav_right} ${styles.mobile_nav}`}>
+      <div
+        id="navbarContent"
+        className={`collapse ms-auto justify-content-md-end  ${styles.mobile} ${styles.block}`}
+      >
         <a href="#about" className={`${styles.nav_link}`}>
           <span>01.</span>About
         </a>

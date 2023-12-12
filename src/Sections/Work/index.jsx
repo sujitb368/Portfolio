@@ -1,6 +1,5 @@
 import Heading from "./../../Components/Heading";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import styles from "./styles.module.css";
 import { useEffect, useState } from "react";
 
@@ -31,13 +30,14 @@ function Work() {
   return (
     <section id="work">
       <Heading index="03" heading="Some Things I’ve Built" />
-      <div className={`row justify-content-center`}>
+      <div className={`row m-0 justify-content-center`}>
         {myRepo.map((repo, index) => (
           <div
+            key={repo.id}
             className={`${
               styles.project
             } col-md-3 border rounded d-flex flex-column justify-content-center align-items-center m-0 ${
-              (index + 1) % 3 !== 0 ? "me-3" : ""
+              (index + 1) % 3 !== 0 ? "me-md-3" : ""
             } mb-2 p-3`}
           >
             <div className={`col-12 ${styles.right}`}>
@@ -50,12 +50,17 @@ function Work() {
               </p>
 
               <div>
-                <a href={repo.clone_url} className={styles.link}>
+                <a
+                  href={repo.clone_url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles.link}
+                >
                   <GitHubIcon />
                 </a>
-                <a href="/" className={styles.link}>
+                {/* <a href="/" className={styles.link}>
                   <OpenInNewIcon />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
